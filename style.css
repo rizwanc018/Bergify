@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+*{
+    font-family: 'Inter', sans-serif;
+    color: hsl(213, 28%, 17%);
+}
+
+nav {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+
+.hero-img {
+    height: auto;
+}
+
+.statics .list-group{
+    box-shadow: rgba(0, 0, 0, 0.14) 0px 5px 10px;
+}
+
+.list-group-item {
+    border: none;
+}
+
+.card img {
+    width: 3.5em;
+    aspect-ratio: 1;
+}
+
+.card-body li {
+    border: 2px solid red;
+    background-image: url(/images/svgImgs/check.svg);
+    background-repeat: no-repeat;
+    background-position: 0 1px;
+
+    
+
+}
