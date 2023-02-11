@@ -1,12 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
-*{
+* {
     font-family: 'Inter', sans-serif;
     color: hsl(213, 28%, 17%);
+    box-sizing: border-box;
+}
+
+:root {
+    --clr-primary: hsl(213, 28%, 17%);
+    --clr-primary-lt: hsl(213, 14%, 34%);
+    --clr-hvr: hsl(160, 84%, 40%);
+    --clr-hvr-dark: hsl(160, 84%, 34%);
+
+}
+  
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    /* border: 2px solid red; */
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+p {
+    font-size: 1.25rem;
+    color: var(--clr-primary-lt);
 }
 
 nav {
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;}
+
+button {
+    border-radius: 12px !important;
+}
+
+button:hover {
+    background-color: var(--clr-hvr) !important;
+    color: white !important;
+}
+
+.card button,
+.last-container button {
+    background-color: var(--clr-hvr);
+    color: white;
 }
 
 .navbar-toggler:focus,
@@ -17,13 +59,32 @@ nav {
     border: none;
 }
 
+@media only screen and (min-width: 768px) {
+    .hero h1 {
+        margin-top: 20%;
+    }
+
+}
+
 .hero-img {
     height: auto;
 }
 
-.statics .list-group{
-    box-shadow: rgba(0, 0, 0, 0.14) 0px 5px 10px;
+.start-btn {
+    background-color:  var(--clr-primary);
+    color: white;
 }
+
+.see-btn {
+    border: 2px solid var(--clr-primary);
+}
+
+.statics, .creator {
+    margin-block: 4rem;
+}
+
+.statics .list-group {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;}
 
 .list-group-item {
     border: none;
@@ -34,12 +95,43 @@ nav {
     aspect-ratio: 1;
 }
 
+.card p{
+    font-size: 1rem;
+}
+
 .card-body li {
-    border: 2px solid red;
     background-image: url(/images/svgImgs/check.svg);
     background-repeat: no-repeat;
     background-position: 0 1px;
+    /* background-origin: padding-box; */
+    /* background-size: auto; */
+    /* border: 2px solid red; */
+    padding-left: 1.75rem;
+    /* line-height: 1.2rem; */
+    font-size: 14px;
+}
 
-    
+footer {
+    background-color: hsl(213, 28%, 17%);
+    color: white;
+}
 
+footer p {
+    margin: 0;
+    margin-bottom: .35rem;
+}
+
+
+.creator img {
+    width: 7.5rem;
+    aspect-ratio: 1;
+}
+
+.plans .card {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.last-container {
+    background-color: var(--clr-primary);
+    color: white;
 }
