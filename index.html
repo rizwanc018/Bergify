@@ -10,16 +10,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <link rel="icon" href="./favicon.svg" sizes="32x32">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css">
     <title>Bergify</title>
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="0">
 
-    <nav class="navbar navbar-expand-md p-3">
+    <nav class="navbar navbar-expand-md p-3 bg-light navbar-light fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="/logo/Logo.svg" alt="" srcset="">
+                <img style="width: 6rem;" src="/logo/Logo.svg" alt="" srcset="">
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -28,25 +29,25 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav ms-auto my-2 my-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Home</a>
+                        <a class="nav-link fw-bold active" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Service</a>
+                        <a class="nav-link fw-bold" href="#service">Service</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link fw-bold" href="#creator">Creators</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
+                        <a class="nav-link fw-bold" href="#plans">Plans</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link fw-bold" href="#contact">Contact</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Price & FAQ</a>
-                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#palns">Price & FAQ</a>
+                    </li> -->
                 </ul>
 
             </div>
@@ -54,13 +55,14 @@
     </nav>
 
     <main>
-        <div class="container hero">
-            <div class="row">
-                <div class="col-md-6">
+        <div class="container hero mt-5" id="home">
+            <div class="row pt-5">
+                <div class="col-md-6" data-aos="fade-right">
                     <h1>
                         <strong class="fw-bold display-4">Increase sales, not your workload.</strong>
                     </h1>
-                    <p>Bring your idea to life in no time. The prototyping solution for all your needs. For UX
+                    <p class="fs-5 my-4">Bring your idea to life in no time. The prototyping solution for all your
+                        needs. For UX
                         designers, entrepreneurs, product managers, marketers, and anyone with a great idea.</p>
                     <div class="row">
                         <!-- <button class="col-md-4 btn py-3 me-3 mb-3">Get Started</button>
@@ -81,149 +83,155 @@
         <br>
         <section class="statics container">
             <!-- <div class="row"> -->
-                <ul class=" row mx-auto list-group list-group-horizontal text-center">
-                    <li class="col-sm-4 list-group-item">
-                        <h1 class="fw-bold">450K</h1>
-                        <p>Users</p>
-                    </li>
-                    <li class="col-sm-4 list-group-item">
-                        <h1 class="fw-bold">24/7</h1>
-                        <p>Support</p>
-                    </li>
-                    <li class="col-sm-4 list-group-item">
-                        <h1 class="fw-bold">1.6M</h1>
-                        <p>Downloads</p>
-                    </li>
-                </ul>
+            <ul class=" row mx-auto list-group list-group-horizontal text-center">
+                <li class="col-sm-4 list-group-item">
+                    <h1 class="fw-bold">450K</h1>
+                    <p>Users</p>
+                </li>
+                <li class="col-sm-4 list-group-item">
+                    <h1 class="fw-bold">24/7</h1>
+                    <p>Support</p>
+                </li>
+                <li class="col-sm-4 list-group-item">
+                    <h1 class="fw-bold">1.6M</h1>
+                    <p>Downloads</p>
+                </li>
+            </ul>
             </div>
         </section>
 
         <br>
-        <section class="container text-center my-4">
+        <section class="container text-center my-4" id="service">
             <h1 class="fw-bold">One place for all your work</h1>
             <p>Save thousands of dollars using a single platform.</p>
 
             <div class="row my-5">
-                <div class="card border-0 col-md-4 p-0 border-0">
+                <div class="card border-0 col-md-4 p-0 border-0" data-aos="zoom-in-up">
                     <img class="mx-auto" class="mx-auto" src="/images//svgImgs/crm.svg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title fw-bold">CRM Software</h2>
-                        <p class="card-text">Store unlimited contacts and build stronger relationships by keeping track
-                            of all your customer details in one place</p>
+                            <p class="card-text">Store unlimited contacts and build stronger relationships by keeping
+                                track
+                                of all your customer details in one place</p>
                     </div>
                 </div>
-                <div class="card border-0 col-md-4">
+                <div class="card border-0 col-md-4" data-aos="zoom-in-up">
                     <img class="mx-auto" src="/images/svgImgs/marketing1.svg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title fw-bold">Marketing Automatioin</h2>
-                        <p class="card-text">Save time by automating your marketing processes and sending personalised
-                            messages to target audiences</p>
+                            <p class="card-text">Save time by automating your marketing processes and sending
+                                personalised
+                                messages to target audiences</p>
                     </div>
                 </div>
-                <div class="card border-0 col-md-4">
+                <div class="card border-0 col-md-4" data-aos="zoom-in-up">
                     <img class="mx-auto" src="/images/svgImgs/spreadsheet.svg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title fw-bold">Spredsheet Addons</h2>
-                        <p class="card-text">Say goodbye to add-ons. Rows integrates with all your business tools. Use
-                            templates with pre-built workflows.</p>
+                            <p class="card-text">Say goodbye to add-ons. Rows integrates with all your business tools.
+                                Use
+                                templates with pre-built workflows.</p>
                     </div>
                 </div>
-                <div class="card border-0 col-md-4">
+                <div class="card border-0 col-md-4" data-aos="zoom-in-up">
                     <img class="mx-auto" src="/images/svgImgs/helpd.svg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title fw-bold">Helpdesk Software</h2>
-                        <p class="card-text">Resolve customer issues faster and delight your customers by delivering
-                            exceptional customer support</p>
+                            <p class="card-text">Resolve customer issues faster and delight your customers by delivering
+                                exceptional customer support</p>
                     </div>
                 </div>
-                <div class="card border-0 col-md-4">
+                <div class="card border-0 col-md-4" data-aos="zoom-in-up">
                     <img class="mx-auto" src="/images/svgImgs/chat.svg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title fw-bold">Live chat software</h2>
-                        <p class="card-text">Offer instant help when your customers need and boost customer happiness
-                            and conversions</p>
+                            <p class="card-text">Offer instant help when your customers need and boost customer
+                                happiness
+                                and conversions</p>
                     </div>
                 </div>
-                <div class="card border-0 col-md-4">
+                <div class="card border-0 col-md-4" data-aos="zoom-in-up">
                     <img class="mx-auto" src="/images/svgImgs/marketing.svg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title fw-bold">Marketing Automatioin</h2>
-                        <p class="card-text">Offer instant help when your customers need and boost customer happiness
-                            and conversions</p>
+                            <p class="card-text">Offer instant help when your customers need and boost customer
+                                happiness
+                                and conversions</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="container text-center creator mt-5">
+        <section class="container text-center creator mt-5" id="creator">
             <h1 class="fw-bold">More than <span style="color: var(--clr-hvr);">404,629</span> happy creators</h1>
             <p>Some of your favorite creators use Themesberg to connect with their audience.</p>
             <div class="row my-5">
-                <div class="card border-0 mb-4 col-md-3">
+                <div class="card border-0 mb-4 col-md-3" data-aos="zoom-in-down">
                     <img class="mx-auto rounded-circle" src="/images/Avatar1.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title fw-bold text-capitalize">Bonnie Green</h3>
-                        <p class="card-text text-capitalize">novalist & writing coach</p>
+                            <p class="card-text text-capitalize">novalist & writing coach</p>
                     </div>
                 </div>
-                <div class="card border-0 mb-4 col-md-3">
+                <div class="card border-0 mb-4 col-md-3" data-aos="zoom-in-down">
                     <img class="mx-auto rounded-circle" src="/images/Avatar2.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title fw-bold text-capitalize">neil sims</h3>
-                        <p class="card-text text-capitalize">singer/songwriter</p>
+                            <p class="card-text text-capitalize">singer/songwriter</p>
                     </div>
                 </div>
-                <div class="card border-0 mb-4 col-md-3">
+                <div class="card border-0 mb-4 col-md-3" data-aos="zoom-in-down">
                     <img class="mx-auto rounded-circle" src="/images/Avatar3.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title fw-bold text-capitalize">roberta casas</h3>
-                        <p class="card-text text-capitalize">enterpreneur</p>
+                            <p class="card-text text-capitalize">enterpreneur</p>
                     </div>
                 </div>
-                <div class="card border-0 mb-4 col-md-3">
+                <div class="card border-0 mb-4 col-md-3" data-aos="zoom-in-down">
                     <img class="mx-auto rounded-circle" src="/images/Avatar4.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title fw-bold text-capitalize">thomas lean</h3>
-                        <p class="card-text text-capitalize">podcaster</p>
+                            <p class="card-text text-capitalize">podcaster</p>
                     </div>
                 </div>
-                <div class="card border-0 mb-4 col-md-3">
+                <div class="card border-0 mb-4 col-md-3" data-aos="zoom-in-down">
                     <img class="mx-auto rounded-circle" src="/images/Avatar5.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title fw-bold text-capitalize">karen nelson</h3>
-                        <p class="card-text text-capitalize">bestselling author</p>
+                            <p class="card-text text-capitalize">bestselling author</p>
                     </div>
                 </div>
-                <div class="card border-0 mb-4 col-md-3">
+                <div class="card border-0 mb-4 col-md-3" data-aos="zoom-in-down">
                     <img class="mx-auto rounded-circle" src="/images/Avatar6.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title fw-bold text-capitalize">helene engels</h3>
-                        <p class="card-text text-capitalize">founder of farnham</p>
+                            <p class="card-text text-capitalize">founder of farnham</p>
                     </div>
                 </div>
-                <div class="card border-0 mb-4 col-md-3">
+                <div class="card border-0 mb-4 col-md-3" data-aos="zoom-in-down">
                     <img class="mx-auto rounded-circle" src="/images/Avatar7.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title fw-bold text-capitalize">robert brown</h3>
-                        <p class="card-text text-capitalize">author of atomic habits</p>
+                            <p class="card-text text-capitalize">author of atomic habits</p>
                     </div>
                 </div>
-                <div class="card border-0 mb-4 col-md-3">
+                <div class="card border-0 mb-4 col-md-3" data-aos="zoom-in-down">
                     <img class="mx-auto rounded-circle" src="/images/Avatar8.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title fw-bold text-capitalize">lana byrd</h3>
-                        <p class="card-text text-capitalize">ios developer</p>
+                            <p class="card-text text-capitalize">ios developer</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="plans container text-center my-5">
+        <section class="plans container text-center my-5" id="plans">
             <h1 class="fw-bold">Our pricing plan made simple</h1>
-            <p class="p-0">All types of businesses need access to development resources, so we give you the option to decide how
+            <p class="p-0">All types of businesses need access to development resources, so we give you the option to
+                decide how
                 much you need to use.</p>
-            <div class="row">
-                <div class="card col-md mx-auto" style="max-width: 95%;">
+            <div class="row gap-4">
+                <div class="card col-md mx-auto" style="max-width: 95%;" data-aos="zoom-in-right">
                     <div class="card-body">
                         <h3 class="card-title text-capitalize fw-semibold">Freelancer</h3>
                         <p class="card-text fs-1 fw-bold d-inline text-reset">$99</p><span>/month</span>
@@ -240,9 +248,9 @@
                     </div>
                 </div>
 
-                <div class="card col-md my-3 mx-auto my-md-0 mx-md-3" style="max-width: 95%;">
-                <!-- <div class="card col-md gy-3 gy-md-0 gx-md-3"> -->
-                    <div class="card-body mx-auto" style="max-width: 95%;">
+                <!-- <div class="card col-md my-3 mx-auto my-md-0 mx-md-3" style="max-width: 95%;"> -->
+                <div class="card col-md mx-auto" style="max-width: 95%;" data-aos="zoom-out">
+                    <div class="card-body mx-auto col-md-offset-2">
                         <h3 class="card-title text-capitalize fw-semibold">Company</h3>
                         <p class="card-text fs-1 fw-bold d-inline text-reset">$299</p><span>/month</span>
                         <p class="card-text">Best for large scale uses and extended redistribution rights</p>
@@ -258,7 +266,7 @@
                     </div>
                 </div>
 
-                <div class="card col-md">
+                <div class="card col-md"  style="max-width: 95%;" data-aos="zoom-in-right">
                     <div class="card-body">
                         <h3 class="card-title text-capitalize fw-semibold">Enterprise</h3>
                         <p class="card-text fs-1 fw-bold d-inline text-reset">$999</p><span>/month</span>
@@ -283,7 +291,8 @@
                     <h2 class="text-white fw-bold">
                         Whatever you make, make it known with Themesberg.
                     </h2>
-                    <p class="text-light">Build your community on Themesberg or bring them with you. We’ll even move your subscribers from
+                    <p class="text-light">Build your community on Themesberg or bring them with you. We’ll even move
+                        your subscribers from
                         your previous tool with our free concierge migration service.</p>
                     <button class="btn py-2 px-5 fw-bold">Get started for free</button>
                 </div>
@@ -297,7 +306,7 @@
     <!-- Footer -->
     <footer class="text-center text-lg-start text-muted pt-5 mt-5">
         <!-- Section: Links  -->
-        <section class="">
+        <section class="" id="contact">
             <div class="container text-start">
                 <!-- Grid row -->
                 <div class="row mt-3">
@@ -317,17 +326,21 @@
                             <div>
 
                                 <a href="" class=" text-center me-4 link-secondary  rounded-circle">
-                                    <i class="text-dark bg-white p-2 rounded-circle fa fa-facebook-f" style="width: 2rem;"></i>
+                                    <i class="text-dark bg-white p-2 rounded-circle fa fa-facebook-f"
+                                        style="width: 2rem;"></i>
                                 </a>
                                 <a href="" class="me-4 link-secondary">
-                                    <i class="text-dark bg-white p-2 rounded-circle fa fa-twitter" style="width: 2rem;"></i>
+                                    <i class="text-dark bg-white p-2 rounded-circle fa fa-twitter"
+                                        style="width: 2rem;"></i>
                                 </a>
-           
+
                                 <a href="" class="me-4 link-secondary">
-                                    <i class="text-dark bg-white p-2 rounded-circle fa fa-linkedin" style="width: 2rem;"></i>
+                                    <i class="text-dark bg-white p-2 rounded-circle fa fa-linkedin"
+                                        style="width: 2rem;"></i>
                                 </a>
                                 <a href="" class="me-4 link-secondary">
-                                    <i class="text-dark bg-white p-2 rounded-circle bg-info fa fa-github" style="width: 2rem;"></i>
+                                    <i class="text-dark bg-white p-2 rounded-circle bg-info fa fa-github"
+                                        style="width: 2rem;"></i>
                                 </a>
                             </div>
                             <!-- Right -->
@@ -427,7 +440,11 @@
         </div>
         <!-- Copyright -->
     </footer>
-    <!-- Footer -->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
 </body>
 

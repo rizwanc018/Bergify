@@ -11,10 +11,16 @@
     --clr-primary-lt: hsl(213, 14%, 34%);
     --clr-hvr: hsl(160, 84%, 40%);
     --clr-hvr-dark: hsl(160, 84%, 34%);
+}
 
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    position: relative;
 }
   
-
 a {
     text-decoration: none;
 }
@@ -29,7 +35,6 @@ li {
 }
 
 p {
-    font-size: 1.25rem;
     color: var(--clr-primary-lt);
 }
 
@@ -38,6 +43,11 @@ nav {
 
 button {
     border-radius: 12px !important;
+}
+
+.nav-link.active,
+.nav-link:hover {
+    color: var(--clr-hvr-dark) !important;
 }
 
 button:hover {
@@ -103,11 +113,7 @@ button:hover {
     background-image: url(/images/svgImgs/check.svg);
     background-repeat: no-repeat;
     background-position: 0 1px;
-    /* background-origin: padding-box; */
-    /* background-size: auto; */
-    /* border: 2px solid red; */
     padding-left: 1.75rem;
-    /* line-height: 1.2rem; */
     font-size: 14px;
 }
 
